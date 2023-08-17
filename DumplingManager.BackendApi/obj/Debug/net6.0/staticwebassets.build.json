@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "QgGZv6RDbkYBts3GoOBxwzNvJKdyTnJ81t5uBpcZtww=",
+  "Source": "DumplingManager.BackendApi",
+  "BasePath": "_content/DumplingManager.BackendApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

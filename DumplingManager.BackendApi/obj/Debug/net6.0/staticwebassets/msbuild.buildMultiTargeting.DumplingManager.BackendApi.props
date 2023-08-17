@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\DumplingManager.BackendApi.props" />
+</Project>
