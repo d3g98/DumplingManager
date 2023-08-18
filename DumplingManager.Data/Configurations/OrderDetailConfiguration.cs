@@ -4,12 +4,12 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace DumplingManager.Data.Configurations
 {
-    internal class OrderDetailConfiguration : IEntityTypeConfiguration<OrderDetail>
+    public class OrderDetailConfiguration : IEntityTypeConfiguration<OrderDetail>
     {
         public void Configure(EntityTypeBuilder<OrderDetail> builder)
         {
             builder.ToTable("tblOrderDetail");
-            builder.HasKey(x => x.Id);
+            builder.AddBaseProperties();
             builder.Property(x => x.OrderId).IsRequired(true);
             builder.Property(x => x.ProductId).IsRequired(true);
             builder.Property(x => x.Quantity).IsRequired(true);

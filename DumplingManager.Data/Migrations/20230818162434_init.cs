@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace DumplingManager.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class initdb : Migration
+    public partial class init : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -17,15 +17,17 @@ namespace DumplingManager.Data.Migrations
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Phone = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Address = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Phone = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Address = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    TypePriceId = table.Column<int>(type: "int", nullable: false),
+                    UseCabinet = table.Column<int>(type: "int", nullable: false),
                     Status = table.Column<int>(type: "int", nullable: false),
                     TimeCreated = table.Column<DateTime>(type: "datetime2", nullable: false),
                     UserCreatedId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     TimeModified = table.Column<DateTime>(type: "datetime2", nullable: false),
                     UserModifiedId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    Note = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Note = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -40,13 +42,17 @@ namespace DumplingManager.Data.Migrations
                     Code = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Price = table.Column<double>(type: "float", nullable: false),
+                    Price2 = table.Column<double>(type: "float", nullable: false),
+                    Price3 = table.Column<double>(type: "float", nullable: false),
+                    Price4 = table.Column<double>(type: "float", nullable: false),
+                    Price5 = table.Column<double>(type: "float", nullable: false),
                     Image = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Note = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Status = table.Column<int>(type: "int", nullable: false),
                     TimeCreated = table.Column<DateTime>(type: "datetime2", nullable: false),
                     UserCreatedId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     TimeModified = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UserModifiedId = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
+                    UserModifiedId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Note = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -62,13 +68,15 @@ namespace DumplingManager.Data.Migrations
                     Phone = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Address = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Discount = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    DiscountWithQuantity = table.Column<int>(type: "int", nullable: false),
+                    DiscountPercent = table.Column<double>(type: "float", nullable: false),
+                    DiscountOne = table.Column<double>(type: "float", nullable: false),
                     Status = table.Column<int>(type: "int", nullable: false),
                     TimeCreated = table.Column<DateTime>(type: "datetime2", nullable: false),
                     UserCreatedId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     TimeModified = table.Column<DateTime>(type: "datetime2", nullable: false),
                     UserModifiedId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    Note = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Note = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -83,15 +91,19 @@ namespace DumplingManager.Data.Migrations
                     Date = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Total = table.Column<double>(type: "float", nullable: false),
+                    TotalQuantity = table.Column<double>(type: "float", nullable: false),
                     StaffId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     CustomerId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    StaffDiscountWithQuantity = table.Column<int>(type: "int", nullable: false),
+                    StaffDiscountPercent = table.Column<double>(type: "float", nullable: false),
+                    StaffDiscountOne = table.Column<double>(type: "float", nullable: false),
                     StaffDiscount = table.Column<double>(type: "float", nullable: false),
                     Status = table.Column<int>(type: "int", nullable: false),
                     TimeCreated = table.Column<DateTime>(type: "datetime2", nullable: false),
                     UserCreatedId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     TimeModified = table.Column<DateTime>(type: "datetime2", nullable: false),
                     UserModifiedId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    Note = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Note = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -127,7 +139,7 @@ namespace DumplingManager.Data.Migrations
                     UserCreatedId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     TimeModified = table.Column<DateTime>(type: "datetime2", nullable: false),
                     UserModifiedId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    Note = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Note = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -164,8 +176,7 @@ namespace DumplingManager.Data.Migrations
             migrationBuilder.CreateIndex(
                 name: "IX_tblOrderDetail_ProductId",
                 table: "tblOrderDetail",
-                column: "ProductId",
-                unique: true);
+                column: "ProductId");
         }
 
         /// <inheritdoc />

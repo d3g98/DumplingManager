@@ -2,12 +2,20 @@
 {
     public class PagedResult<T>
     {
-        public PagedResult()
+        //public PagedResult()
+        //{
+        //    page = 1;
+        //    pageSize = 1;
+        //    totalPage = 1;
+        //    items = new List<T>();
+        //}
+
+        public PagedResult(int totalItems, BaseFilterRequest filter, List<T> items)
         {
-            page = 1;
-            pageSize = 1;
-            totalPage = 1;
-            items = new List<T>();
+            page = filter.Page;
+            pageSize = filter.PageSize;
+            totalPage = (int)Math.Ceiling((decimal)totalItems / filter.PageSize);
+            this.items = items;
         }
 
         public int page { get; set; }

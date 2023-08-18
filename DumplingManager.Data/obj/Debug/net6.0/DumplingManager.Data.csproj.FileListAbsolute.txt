@@ -1,6 +1,8 @@
 C:\Users\PC.DESKTOP-LHETLS5\Desktop\DumplingManager\DumplingManager.Data\bin\Debug\net6.0\DumplingManager.Data.deps.json
+C:\Users\PC.DESKTOP-LHETLS5\Desktop\DumplingManager\DumplingManager.Data\bin\Debug\net6.0\DumplingManager.Data.runtimeconfig.json
 C:\Users\PC.DESKTOP-LHETLS5\Desktop\DumplingManager\DumplingManager.Data\bin\Debug\net6.0\DumplingManager.Data.dll
 C:\Users\PC.DESKTOP-LHETLS5\Desktop\DumplingManager\DumplingManager.Data\bin\Debug\net6.0\DumplingManager.Data.pdb
+C:\Users\PC.DESKTOP-LHETLS5\Desktop\DumplingManager\DumplingManager.Data\obj\Debug\net6.0\DumplingManager.Data.csproj.AssemblyReference.cache
 C:\Users\PC.DESKTOP-LHETLS5\Desktop\DumplingManager\DumplingManager.Data\obj\Debug\net6.0\DumplingManager.Data.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\PC.DESKTOP-LHETLS5\Desktop\DumplingManager\DumplingManager.Data\obj\Debug\net6.0\DumplingManager.Data.AssemblyInfoInputs.cache
 C:\Users\PC.DESKTOP-LHETLS5\Desktop\DumplingManager\DumplingManager.Data\obj\Debug\net6.0\DumplingManager.Data.AssemblyInfo.cs
@@ -8,10 +10,12 @@ C:\Users\PC.DESKTOP-LHETLS5\Desktop\DumplingManager\DumplingManager.Data\obj\Deb
 C:\Users\PC.DESKTOP-LHETLS5\Desktop\DumplingManager\DumplingManager.Data\obj\Debug\net6.0\DumplingManager.Data.dll
 C:\Users\PC.DESKTOP-LHETLS5\Desktop\DumplingManager\DumplingManager.Data\obj\Debug\net6.0\refint\DumplingManager.Data.dll
 C:\Users\PC.DESKTOP-LHETLS5\Desktop\DumplingManager\DumplingManager.Data\obj\Debug\net6.0\DumplingManager.Data.pdb
-C:\Users\PC.DESKTOP-LHETLS5\Desktop\DumplingManager\DumplingManager.Data\obj\Debug\net6.0\ref\DumplingManager.Data.dll
-C:\Users\PC.DESKTOP-LHETLS5\Desktop\DumplingManager\DumplingManager.Data\bin\Debug\net6.0\DumplingManager.Data.runtimeconfig.json
-C:\Users\PC.DESKTOP-LHETLS5\Desktop\DumplingManager\DumplingManager.Data\obj\Debug\net6.0\DumplingManager.Data.csproj.AssemblyReference.cache
 C:\Users\PC.DESKTOP-LHETLS5\Desktop\DumplingManager\DumplingManager.Data\obj\Debug\net6.0\DumplingManager.Data.genruntimeconfig.cache
+C:\Users\PC.DESKTOP-LHETLS5\Desktop\DumplingManager\DumplingManager.Data\obj\Debug\net6.0\ref\DumplingManager.Data.dll
+H:\NET.CORE\DumplingManager\DumplingManager.Data\bin\Debug\net6.0\DumplingManager.Data.deps.json
+H:\NET.CORE\DumplingManager\DumplingManager.Data\bin\Debug\net6.0\DumplingManager.Data.runtimeconfig.json
+H:\NET.CORE\DumplingManager\DumplingManager.Data\bin\Debug\net6.0\DumplingManager.Data.dll
+H:\NET.CORE\DumplingManager\DumplingManager.Data\bin\Debug\net6.0\DumplingManager.Data.pdb
 H:\NET.CORE\DumplingManager\DumplingManager.Data\obj\Debug\net6.0\DumplingManager.Data.csproj.AssemblyReference.cache
 H:\NET.CORE\DumplingManager\DumplingManager.Data\obj\Debug\net6.0\DumplingManager.Data.GeneratedMSBuildEditorConfig.editorconfig
 H:\NET.CORE\DumplingManager\DumplingManager.Data\obj\Debug\net6.0\DumplingManager.Data.AssemblyInfoInputs.cache
@@ -20,9 +24,5 @@ H:\NET.CORE\DumplingManager\DumplingManager.Data\obj\Debug\net6.0\DumplingManage
 H:\NET.CORE\DumplingManager\DumplingManager.Data\obj\Debug\net6.0\DumplingManager.Data.dll
 H:\NET.CORE\DumplingManager\DumplingManager.Data\obj\Debug\net6.0\refint\DumplingManager.Data.dll
 H:\NET.CORE\DumplingManager\DumplingManager.Data\obj\Debug\net6.0\DumplingManager.Data.pdb
-H:\NET.CORE\DumplingManager\DumplingManager.Data\bin\Debug\net6.0\DumplingManager.Data.deps.json
-H:\NET.CORE\DumplingManager\DumplingManager.Data\bin\Debug\net6.0\DumplingManager.Data.runtimeconfig.json
-H:\NET.CORE\DumplingManager\DumplingManager.Data\bin\Debug\net6.0\DumplingManager.Data.dll
-H:\NET.CORE\DumplingManager\DumplingManager.Data\bin\Debug\net6.0\DumplingManager.Data.pdb
 H:\NET.CORE\DumplingManager\DumplingManager.Data\obj\Debug\net6.0\DumplingManager.Data.genruntimeconfig.cache
 H:\NET.CORE\DumplingManager\DumplingManager.Data\obj\Debug\net6.0\ref\DumplingManager.Data.dll

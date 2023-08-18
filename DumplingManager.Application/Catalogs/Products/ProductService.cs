@@ -93,7 +93,7 @@ namespace DumplingManager.Application.Catalogs.Products
                 if (searchData == null) return new ErrorResult<bool>("Mặt hàng không tồn tại");
                 _db.Products.Remove(searchData);
                 _db.SaveChanges();
-                return new OkResult<bool>();
+                return new OkResult<bool>(true);
             }
             catch (Exception e)
             {

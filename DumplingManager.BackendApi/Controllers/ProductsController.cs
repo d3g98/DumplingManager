@@ -1,6 +1,5 @@
-﻿using DumplingManager.Application.Catalogs.Products;
-using DumplingManager.Application.Commons;
-using DumplingManager.Data.Entities;
+﻿using DumplingManager.Application.Model.Catalog;
+using DumplingManager.Application.Service.Catalog;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DumplingManager.BackendApi.Controllers
@@ -9,26 +8,32 @@ namespace DumplingManager.BackendApi.Controllers
     [ApiController]
     public class ProductsController : ControllerBase
     {
-        private readonly IProductService<Guid, Product> _service;
-        public ProductsController(IProductService<Guid, Product> service)
+        private readonly IProductService _service;
+        public ProductsController(IProductService service)
         {
             _service = service;
         }
 
         [HttpGet]
-        public IActionResult List(CustomFilterParam<Guid> param)
+        public IActionResult List()
         {
-            return Ok(_service.GetAll(param));
+            return Ok(_service.Get());
+        }
+
+        [HttpGet("active")]
+        public IActionResult ListActive()
+        {
+            return Ok(_service.GetActive());
         }
 
         [HttpPost]
-        public IActionResult Insert(ProductRequest param)
+        public IActionResult Create([FromForm] ProductCreateRequest param)
         {
-            return Ok(_service.Insert(param));
+            return Ok(_service.Create(param));
         }
 
         [HttpPut]
-        public IActionResult Update(ProductRequest param)
+        public IActionResult Update([FromForm] ProductUpdateRequest param)
         {
             return Ok(_service.Update(param));
         }

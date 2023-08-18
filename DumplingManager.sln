@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34009.444
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DumplingManager.BackendApi", "DumplingManager.BackendApi\DumplingManager.BackendApi.csproj", "{F31F32FE-5254-4E39-BC4B-333A71F2881B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DumplingManager.BackendApi", "DumplingManager.BackendApi\DumplingManager.BackendApi.csproj", "{F31F32FE-5254-4E39-BC4B-333A71F2881B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DumplingManager.Data", "DumplingManager.Data\DumplingManager.Data.csproj", "{65F54CA0-F30C-4A02-A6B5-D50BC0E27E65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DumplingManager.Data", "DumplingManager.Data\DumplingManager.Data.csproj", "{65F54CA0-F30C-4A02-A6B5-D50BC0E27E65}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DumplingManager.Application", "DumplingManager.Application\DumplingManager.Application.csproj", "{45BAF954-7C46-4CCA-9526-830F1BDC5D61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DumplingManager.Application", "DumplingManager.Application\DumplingManager.Application.csproj", "{45BAF954-7C46-4CCA-9526-830F1BDC5D61}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

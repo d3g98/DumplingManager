@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DumplingManager.Data.Migrations
 {
     [DbContext(typeof(DumplingDbContext))]
-    [Migration("20230817102931_init-db")]
-    partial class initdb
+    [Migration("20230818162434_init")]
+    partial class init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -32,11 +32,9 @@ namespace DumplingManager.Data.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Address")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
@@ -44,11 +42,9 @@ namespace DumplingManager.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Note")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Phone")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Status")
@@ -59,6 +55,12 @@ namespace DumplingManager.Data.Migrations
 
                     b.Property<DateTime>("TimeModified")
                         .HasColumnType("datetime2");
+
+                    b.Property<int>("TypePriceId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UseCabinet")
+                        .HasColumnType("int");
 
                     b.Property<Guid>("UserCreatedId")
                         .HasColumnType("uniqueidentifier");
@@ -88,11 +90,19 @@ namespace DumplingManager.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Note")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<double>("StaffDiscount")
                         .HasColumnType("float");
+
+                    b.Property<double>("StaffDiscountOne")
+                        .HasColumnType("float");
+
+                    b.Property<double>("StaffDiscountPercent")
+                        .HasColumnType("float");
+
+                    b.Property<int>("StaffDiscountWithQuantity")
+                        .HasColumnType("int");
 
                     b.Property<Guid>("StaffId")
                         .HasColumnType("uniqueidentifier");
@@ -107,6 +117,9 @@ namespace DumplingManager.Data.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<double>("Total")
+                        .HasColumnType("float");
+
+                    b.Property<double>("TotalQuantity")
                         .HasColumnType("float");
 
                     b.Property<Guid>("UserCreatedId")
@@ -137,7 +150,6 @@ namespace DumplingManager.Data.Migrations
                         .HasColumnType("float");
 
                     b.Property<string>("Note")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<Guid>("OrderId")
@@ -174,8 +186,7 @@ namespace DumplingManager.Data.Migrations
 
                     b.HasIndex("OrderId");
 
-                    b.HasIndex("ProductId")
-                        .IsUnique();
+                    b.HasIndex("ProductId");
 
                     b.ToTable("tblOrderDetail", (string)null);
                 });
@@ -199,10 +210,21 @@ namespace DumplingManager.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Note")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<double>("Price")
+                        .HasColumnType("float");
+
+                    b.Property<double>("Price2")
+                        .HasColumnType("float");
+
+                    b.Property<double>("Price3")
+                        .HasColumnType("float");
+
+                    b.Property<double>("Price4")
+                        .HasColumnType("float");
+
+                    b.Property<double>("Price5")
                         .HasColumnType("float");
 
                     b.Property<int>("Status")
@@ -235,8 +257,14 @@ namespace DumplingManager.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal>("Discount")
-                        .HasColumnType("decimal(18,2)");
+                    b.Property<double>("DiscountOne")
+                        .HasColumnType("float");
+
+                    b.Property<double>("DiscountPercent")
+                        .HasColumnType("float");
+
+                    b.Property<int>("DiscountWithQuantity")
+                        .HasColumnType("int");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -247,7 +275,6 @@ namespace DumplingManager.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Note")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Phone")
@@ -302,8 +329,8 @@ namespace DumplingManager.Data.Migrations
                         .IsRequired();
 
                     b.HasOne("DumplingManager.Data.Entities.Product", "Product")
-                        .WithOne("OrderDetail")
-                        .HasForeignKey("DumplingManager.Data.Entities.OrderDetail", "ProductId")
+                        .WithMany("OrderDetails")
+                        .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -324,8 +351,7 @@ namespace DumplingManager.Data.Migrations
 
             modelBuilder.Entity("DumplingManager.Data.Entities.Product", b =>
                 {
-                    b.Navigation("OrderDetail")
-                        .IsRequired();
+                    b.Navigation("OrderDetails");
                 });
 
             modelBuilder.Entity("DumplingManager.Data.Entities.Staff", b =>

@@ -1,1 +1,14 @@
 ﻿docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=duong*12345678" -p 1433:1433 -d mcr.microsoft.com/mssql/server:2019-latest
+
+
+//public IEnumerable<Product> Get(CustomFilterParam<Guid> param)
+        //{
+        //    IQueryable<Product> products = _db.Products.Where(x => x.Status == 30);
+        //    if (param != null)
+        //    {
+        //        if (param.search != null && param.search.Length > 0) products = products.Where(x => x.Name.ToLower().Contains(param.search.ToLower()));
+        //        products = products.Take(param.pageSize ?? 0);
+        //        products = products.Skip(param.pageSize ?? 0);
+        //    }
+        //    return products.ToList();
+        //}

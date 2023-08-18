@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "dqaTBsmj3Jo9TnC7DHj4/Szy9CoQCIYHMePkJh5VDsGKtaF3ykgNR+yMtAK2RGF9Q2qcOjKdvnVHpg8aP3H7rQ==",
+  "dgSpecHash": "S4YN9OgW/290GfGS2qa/sqNkkBolQ3LHNJty87bk0TYcy7pBm91A/zde39FJViQiIyOpY1ceaRNHnizs37vBBQ==",
   "success": true,
   "projectFilePath": "H:\\NET.CORE\\DumplingManager\\DumplingManager.Application\\DumplingManager.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DuongNN\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\DuongNN\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\DuongNN\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
     "C:\\Users\\DuongNN\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\DuongNN\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\DuongNN\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.2\\microsoft.data.sqlclient.5.0.2.nupkg.sha512",
@@ -46,6 +47,7 @@
     "C:\\Users\\DuongNN\\.nuget\\packages\\system.globalization\\4.3.0\\system.globalization.4.3.0.nupkg.sha512",
     "C:\\Users\\DuongNN\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.21.0\\system.identitymodel.tokens.jwt.6.21.0.nupkg.sha512",
     "C:\\Users\\DuongNN\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
+    "C:\\Users\\DuongNN\\.nuget\\packages\\system.io.pipelines\\5.0.2\\system.io.pipelines.5.0.2.nupkg.sha512",
     "C:\\Users\\DuongNN\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\DuongNN\\.nuget\\packages\\system.memory.data\\1.0.2\\system.memory.data.1.0.2.nupkg.sha512",
     "C:\\Users\\DuongNN\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",

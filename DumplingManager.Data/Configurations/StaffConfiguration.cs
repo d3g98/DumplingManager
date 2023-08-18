@@ -4,12 +4,12 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace DumplingManager.Data.Configurations
 {
-    internal class StaffConfiguration : IEntityTypeConfiguration<Staff>
+    public class StaffConfiguration : IEntityTypeConfiguration<Staff>
     {
         public void Configure(EntityTypeBuilder<Staff> builder)
         {
             builder.ToTable("tblStaff");
-            builder.HasKey(x => x.Id);
+            builder.AddBaseProperties();
             builder.Property(x => x.Name).IsRequired(true);
         }
     }

@@ -4,13 +4,15 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace DumplingManager.Data.Configurations
 {
-    internal class CustomerConfiguration : IEntityTypeConfiguration<Customer>
+    public class CustomerConfiguration : IEntityTypeConfiguration<Customer>
     {
         public void Configure(EntityTypeBuilder<Customer> builder)
         {
             builder.ToTable("tblCustomer");
-            builder.HasKey(x => x.Id);
-            builder.Property(x => x.Name).IsRequired(true);
+            builder.AddBaseProperties();
+            builder.Property(x => x.Phone).IsRequired(false);
+            builder.Property(x => x.Email).IsRequired(false);
+            builder.Property(x => x.Address).IsRequired(false);
         }
     }
 }

@@ -7,13 +7,19 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Catalogs\Customers\" />
-    <Folder Include="Catalogs\Staffs\" />
-    <Folder Include="Tranlations\Order\" />
+    <Folder Include="Extentions\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.17" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\DumplingManager.Data\DumplingManager.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
 
 </Project>

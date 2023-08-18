@@ -1,4 +1,4 @@
-﻿using DumplingManager.Application.Catalogs.OrderStatus;
+﻿using DumplingManager.Application.Service.Catalog;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DumplingManager.BackendApi.Controllers
