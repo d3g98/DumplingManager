@@ -3812,19 +3812,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\DuongNN\\.nuget\\packages\\": {}
+    "C:\\Users\\d3g19\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\NET.CORE\\DumplingManager\\DumplingManager.BackendApi\\DumplingManager.BackendApi.csproj",
+      "projectUniqueName": "D:\\ASP.NET\\DumplingManager\\DumplingManager.BackendApi\\DumplingManager.BackendApi.csproj",
       "projectName": "DumplingManager.BackendApi",
-      "projectPath": "H:\\NET.CORE\\DumplingManager\\DumplingManager.BackendApi\\DumplingManager.BackendApi.csproj",
-      "packagesPath": "C:\\Users\\DuongNN\\.nuget\\packages\\",
-      "outputPath": "H:\\NET.CORE\\DumplingManager\\DumplingManager.BackendApi\\obj\\",
+      "projectPath": "D:\\ASP.NET\\DumplingManager\\DumplingManager.BackendApi\\DumplingManager.BackendApi.csproj",
+      "packagesPath": "C:\\Users\\d3g19\\.nuget\\packages\\",
+      "outputPath": "D:\\ASP.NET\\DumplingManager\\DumplingManager.BackendApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\DuongNN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\d3g19\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3838,8 +3838,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "H:\\NET.CORE\\DumplingManager\\DumplingManager.Application\\DumplingManager.Application.csproj": {
-              "projectPath": "H:\\NET.CORE\\DumplingManager\\DumplingManager.Application\\DumplingManager.Application.csproj"
+            "D:\\ASP.NET\\DumplingManager\\DumplingManager.Application\\DumplingManager.Application.csproj": {
+              "projectPath": "D:\\ASP.NET\\DumplingManager\\DumplingManager.Application\\DumplingManager.Application.csproj"
             }
           }
         }
@@ -3878,7 +3878,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
